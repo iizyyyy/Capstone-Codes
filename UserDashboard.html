@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="userStyles.css">
-  <title> User Dashboard </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="userStyles.css">
+    <title>Dashboard - BTECH FURNISHING</title>
 </head>
 
-<body class="dashboard-body">
-  <div class="dashboard-container">
-    <!-- Sidebar -->
-    <div class="dashboard-sidebar">
-      <div class="profile">
-        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User Profile">
-        <h3>User Profile</h3>
-      </div>
-      
-      <nav>
-        <ul>
-          <li class="active"><a href="UserDashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard </a></li>
-          <li><a href="#"><i class="fas fa-calendar-check"></i> Reservation Request </a></li>
-          <li><a href="UserFurnishing.html"><i class="fas fa-couch"></i> Furnishing Management </a></li>
-          <li><a href="UserNotif.html"><i class="fas fa-bell"></i> Notifications & Alerts </a></li>
-          <li><a href="#"><i class="fas fa-qrcode"></i> QR Code Scanning & Quick Access </a></li>
-          <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log out </a></li>
-        </ul>
-      </nav>
+<body>
+    <div class="header">
+      <header>  
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search"/>
+        <p class="second-line">FURNISHING</p>
+      </header>
     </div>
     
-    <!-- Main Content -->
-    <div class="dashboard-main-content">
-      <!-- Header -->
-      <div class="dashboard-header">
-        <div class="brand">
-          <h1>BTECH FURNISHING</h1>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
+          <h2> User </h2>
         </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Search">
-          <button class="search-button"><i class="fas fa-search"></i></button>
-        </div>
-      </div>
+  
+        <nav class="nav">
+          <a href="UserDashboard.html">
+              <button> Dashboard </button>
+          </a>
+  
+          <a href="UserBorrow.html">
+              <button> Reservation Request </button>
+          </a>
+          
+          <a href="UserFurnishing.html">
+              <button> Furnishing Management </button>
+          </a>
+  
+          <a href="UserNotif.html">
+              <button> Notifications & Alerts </button>
+          </a>
+  
+          <a href="UserQRScan.html">
+              <button> QR Code Scanning & Quick Access </button>
+          </a>
+  
+          <a href="#"></a>
+              <button>Log out</button>
+          </a>
+  
+      </nav>
+  </aside>
       
       <!-- Dashboard Overview -->
-      <div class="dashboard-overview">
-        <h2>Dashboard Overview</h2>
-        
-        <div class="overview-cards">
-          <div class="dashboard-card">
-            <div class="card-icon">
-              <i class="fas fa-table"></i>
-            </div>
-            <div class="card-info">
-              <h3>Total Furnishing</h3>
-              <div class="card-value">20</div>
-            </div>
+      <main class="main">
+        <section class="overview">
+          <h1>Dashboard Overview</h1>
+          <div class="cards">
+  
+          <div class="card">
+              <div class="card-icon">
+                  <i class="fas fa-table"></i>
+                  <p>Total Furnishing</p>
+                  <span>20</span>
+              </div>
           </div>
-          
-          <div class="dashboard-card">
-            <div class="card-icon">
-              <i class="fas fa-check-circle"></i>
-            </div>
-            <div class="card-info">
-              <h3>Available</h3>
-              <div class="card-value">13</div>
-            </div>
+  
+          <div class="card">
+              <div class="card-icon">
+                  <i class="fas fa-check"></i>
+                  <p>Available</p>
+                  <span>13</span>
+              </div>
           </div>
-          
-          <div class="dashboard-card">
-            <div class="card-icon">
-              <i class="fas fa-calendar"></i>
-            </div>
-            <div class="card-info">
-              <h3>Reservation</h3>
-              <div class="card-value">7</div>
-            </div>
+  
+          <div class="card">
+              <div class="card-icon">
+                  <i class="fas fa-calendar-check"></i>
+                  <p>Reservation</p>
+                  <span>7</span>
+              </div>
           </div>
-        </div>
-      </div>
+  
+          </div>
+        </section>
       
       <!-- Recent Activity Logs -->
       <div class="activity-logs">
@@ -102,7 +109,7 @@
               <td>MJ Castillo</td>
               <td>03/17/25</td>
               <td>11:29 am</td>
-              <td><span class="status pending">Pending</span></td>
+              <td><span class="status">Pending</span></td>
             </tr>
             <tr>
               <td>
@@ -111,7 +118,7 @@
               <td>MJ Castillo</td>
               <td>03/17/25</td>
               <td>11:29 am</td>
-              <td><span class="status overdue">Overdue</span></td>
+              <td><span class="status">Overdue</span></td>
             </tr>
           </tbody>
         </table>

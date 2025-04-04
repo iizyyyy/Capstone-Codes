@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="userStyles.css">
-  <title>Scan QR Code Borrowing Req Form Page</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="userStyles.css">
+    <title>Scan QR Code Borrowing Req Form Page</title>
 </head>
 
-<body class="dashboard-body">
-    <div class="dashboard-container">
-      <!-- Sidebar -->
-      <div class="dashboard-sidebar">
+<body>
+    <div class="header">
+      <header>  
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search"/>
+        <p class="second-line">FURNISHING</p>
+      </header>
+    </div>
+    
+    <div class="container">
+      <aside class="sidebar">
         <div class="profile">
-          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User Profile">
-          <h3>User Profile</h3>
+          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
+          <h2> User </h2>
         </div>
-        
-        <nav>
-          <ul>
-            <li><a href="UserDashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard </a></li>
-            <li><a href="#"><i class="fas fa-calendar-check"></i> Reservation Request </a></li>
-            <li><a href="UserFurnishing.html"><i class="fas fa-couch"></i> Furnishing Management </a></li>
-            <li><a href="UserNotif.html"><i class="fas fa-bell"></i> Notifications & Alerts </a></li>
-            <li class="active"><a href="UserQRScan.html"><i class="fas fa-qrcode"></i> QR Code Scanning & Quick Access </a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log out </a></li>
-          </ul>
-        </nav>
-      </div>
-      
-      <!-- Main Content -->
-      <div class="dashboard-main-content">
-        <!-- Header -->
-        <div class="dashboard-header">
-          <div class="brand">
-            <h1>BTECH FURNISHING</h1>
-          </div>
-          <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <button class="search-button"><i class="fas fa-search"></i></button>
-          </div>
-        </div>
+  
+        <nav class="nav">
+          <a href="UserDashboard.html">
+              <button> Dashboard </button>
+          </a>
+  
+          <a href="UserBorrow.html">
+              <button> Reservation Request </button>
+          </a>
+          
+          <a href="UserFurnishing.html">
+              <button> Furnishing Management </button>
+          </a>
+  
+          <a href="UserNotif.html">
+              <button> Notifications & Alerts </button>
+          </a>
+  
+          <a href="UserQRScan.html">
+              <button> QR Code Scanning & Quick Access </button>
+          </a>
+  
+          <a href="#"></a>
+              <button>Log out</button>
+          </a>
+  
+      </nav>
+    </aside>
 
-        <div class="qr-box">
-            <h1>QR Code Scanner - Furnishing Details</h1>
-            <div class="qr-main-box">
-            <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/QR_Code.png" alt="QR-CODE" class="scan-qr-img">
+        <div class="main">
+            <div class="qr-box">
+                <h1>QR Code Scanner - Furnishing Details</h1>
+                <div class="qr-main-box">
+                <img src="#" alt="" class="scan-qr-img">
+                </div>
+                <button class="scan-qr">Scan QR Code</button>   
             </div>
-            <button class="scan-qr">Scan QR Code</button>
         </div>
     </body>
 </html>

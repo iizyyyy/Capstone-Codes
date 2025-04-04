@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="userStyles.css">
-  <title> User Furnishing Management </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="userStyles.css">
+    <title>Furnishing Management - BTECH FURNISHING</title>
 </head>
 
-<body class="furnishing-body">
-  <div class="dashboard-container">
-    <!-- Sidebar -->
-    <div class="dashboard-sidebar">
-      <div class="profile">
-        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin Profile">
-        <h3>Admin</h3>
-      </div>
-      
-      <nav>
-        <ul>
-          <li><a href="UserDashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-          <li><a href="#"><i class="fas fa-calendar-check"></i> Reservation Request</a></li>
-          <li class="active"><a href="UserFurnishing.html"><i class="fas fa-couch"></i> Furnishing Management</a></li>
-          <li><a href="UserNotif.html"><i class="fas fa-bell"></i> Notifications & Alerts</a></li>
-          <li><a href="#"><i class="fas fa-qrcode"></i> QR Code Scanning & Quick Access</a></li>
-          <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
-        </ul>
-      </nav>
+<body>
+    <div class="header">
+      <header>  
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search"/>
+        <p class="second-line">FURNISHING</p>
+      </header>
     </div>
     
-    <!-- Main Content -->
-    <div class="dashboard-main-content">
-      <div class="dashboard-header">
-        <div class="brand">
-          <h1>BTECH FURNISHING</h1>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
+          <h2> User </h2>
         </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Search">
-          <button class="search-button"><i class="fas fa-search"></i></button>
-        </div>
-      </div>
-      
-      <!-- Furnishing Management Table -->
+  
+        <nav class="nav">
+          <a href="UserDashboard.html">
+              <button> Dashboard </button>
+          </a>
+  
+          <a href="UserBorrow.html">
+              <button> Reservation Request </button>
+          </a>
+          
+          <a href="UserFurnishing.html">
+              <button> Furnishing Management </button>
+          </a>
+  
+          <a href="UserNotif.html">
+              <button> Notifications & Alerts </button>
+          </a>
+  
+          <a href="UserQRScan.html">
+              <button> QR Code Scanning & Quick Access </button>
+          </a>
+  
+          <a href="#"></a>
+              <button>Log out</button>
+          </a>
+  
+      </nav>
+    </aside>
+
+    <main class="main">
       <div class="furnishing-management">
-        <div class="table-container">
+        <h2>Furnishing Management</h2>
+        
+        <div class="table">
           <table>
             <thead>
               <tr>
@@ -53,15 +67,82 @@
                 <th>Status</th>
               </tr>
             </thead>
-            <tbody id="furnishing-table-body">
-              <!-- Table will be populated by JavaScript -->
+            <tbody>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR001" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>1</td>
+                <td><span class="status-badge status-available">Available</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=TABLE001" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/CD853F/FFFFFF?text=Table" alt="Table" class="item-image">
+                </td>
+                <td>1</td>
+                <td><span class="status-badge status-maintenance">Under Maintenance</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=TABLE002" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/CD853F/FFFFFF?text=Table" alt="Table" class="item-image">
+                </td>
+                <td>6</td>
+                <td><span class="status-badge status-available">Available</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR002" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>10</td>
+                <td><span class="status-badge status-available">Available</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR003" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>1</td>
+                <td><span class="status-badge status-reserved">Reserved</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR004" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>7</td>
+                <td><span class="status-badge status-maintenance">Under Maintenance</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR005" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>3</td>
+                <td><span class="status-badge status-reserved">Reserved</span></td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
-    </div>
+    </main>
   </div>
-  
-  <script src="furnishingJS.js"></script>
 </body>
 </html>

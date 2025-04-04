@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <linkrel="stylesheet" href="userStyles.css">
-  <title>Borrowing Req Form Page</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="userStyles.css">
+    <title>Borrowing Req Form Page</title>
 </head>
 
 <body>
-
-  <div class="header">
-    <header>  
-      <p class="first-line">BTECH</p>
-      <input type="text" placeholder="Search..." class="header-search"/>
-      <p class="second-line">FURNISHING</p>
-    </header>
-  </div>
+    <div class="header">
+      <header>  
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search"/>
+        <p class="second-line">FURNISHING</p>
+      </header>
+    </div>
+    
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
+          <h2> User </h2>
+        </div>
   
-  <div class="container">
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin">
-        <h2> User </h2>
-      </div>
-      <nav class="nav">
-        <a href="UserDashboard.html">
-            <button> Dashboard </button>
-        </a>
-        <a href="RESERVATION REQUEST (ADMIN).html">
-            <button> Reservation Request </button>
-        </a>
-        <a href="UserFurnishing.html">
-            <button> Furnishing Management </button>
-        </a>
-        <a href="UserNotif.html">
-            <button> Notifications & Alerts</button>
-        </a>
-        <a href="UserQRScan.html">
-            <button> QR Code Scanning & Quick Access </button>
-        </a>
-        <button>Log out</button>
-    </nav>
-</aside>
+        <nav class="nav">
+          <a href="UserDashboard.html">
+              <button> Dashboard </button>
+          </a>
+  
+          <a href="UserBorrow.html">
+              <button> Reservation Request </button>
+          </a>
+          
+          <a href="UserFurnishing.html">
+              <button> Furnishing Management </button>
+          </a>
+  
+          <a href="UserNotif.html">
+              <button> Notifications & Alerts </button>
+          </a>
+  
+          <a href="UserQRScan.html">
+              <button> QR Code Scanning & Quick Access </button>
+          </a>
+  
+          <a href="#"></a>
+              <button>Log out</button>
+          </a>
+  
+      </nav>
+  </aside>
 
+    <div class="main">
       <div class="form-box">
         <div class="box">
+            <div class="borr-text">
           <h1>BORROWER'S SLIP</h1>
         </div>
+    </div>
           <div class="borr-details">
             <p>*Borrower's Details</p>
-            <img src="qr_code_PNG10.png" alt="QR CODE" class="qrcode">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TestQR101" alt="QR CODE" class="qrcode">
           </div>
 
           <form>
@@ -102,6 +114,7 @@
             <button class="sub-req">Submit Request</button>
             <button class="cancel-btn">Cancel</button>
           </div>
+      </div>
       </div>
     </main>
   </div>
