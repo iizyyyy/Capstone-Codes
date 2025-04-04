@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="adminStyles.css">
+    <title></title>
+</head>
+
+<body>
+  <header>
+      <div class="header-content">
+          <div class="header-title">
+              <p>BTECH</p>
+           <p>FURNISHING</p>
+          </div>
+          <input type="text" placeholder="Search..." class="header-search">
+      </div>
+  </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="C:\Users\Windows 10\Downloads\btechlogo.jpg" alt="User Profile">
+          <h2>Admin</h2>
+        </div>
+        <nav class="nav">
+          <button>Dashboard</button>
+          <button>Furnishing Management</button>
+          <button class="active">Reservation Management</button>
+          <button>Inventory Monitoring</button>
+          <button>Notifications & Alerts</button>
+          <button>Log out</button>
+        </nav>
+      </aside>
+  
+      <main class="main">
+        <div class="topbar">
+        </div>
+  
+        <div class="form-section">
+          <h3>*Borrower Details</h3>
+          <div class="form-grid">
+            <input type="text" placeholder="Name" />
+            <input type="date" placeholder="Date Borrowed" />
+            <input type="text" placeholder="Contact Number" />
+            <input type="date" placeholder="Date of Return" />
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <input type="text" placeholder="Transferred to: (Campus)" />
+            <input type="text" placeholder="Purpose of Use" />
+          </div>
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>QR Code</th>
+                <th>Item</th>
+                <th>Request By</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Chair101" class="qr-img" /></td>
+                <td>Chair</td>
+                <td>MJ Castillo</td>
+                <td>March 24, 2025</td>
+                <td>Pending</td>
+                <td>
+                  <button class="action-btn approve">Approve</button>
+                  <button class="action-btn reject">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Table102" class="qr-img" /></td>
+                <td>Table</td>
+                <td>Bryan</td>
+                <td>March 20, 2025</td>
+                <td>Pending</td>
+                <td>
+                  <button class="action-btn approve">Approve</button>
+                  <button class="action-btn reject">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Projector103" class="qr-img" /></td>
+                <td>Projector</td>
+                <td>Micaella</td>
+                <td>March 22, 2025</td>
+                <td>Pending</td>
+                <td>
+                  <button class="action-btn approve">Approve</button>
+                  <button class="action-btn reject">Reject</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+  </html>
