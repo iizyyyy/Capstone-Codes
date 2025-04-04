@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="userAuth.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="nav-buttons">
+        <button class="login-btn">Log in</button>
+        <button class="signup-btn">Sign up</button>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="form-container">
+        <h1>Sign up!</h1>
+        <form id="signupForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="middleName">Middle Name</label>
+              <input type="text" id="middleName" name="middleName">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Birthday</label>
+            <div class="birthday-selects">
+              <div class="select-wrapper">
+                <select id="month" name="month" required>
+                  <option value="" disabled selected>Month</option>
+                  <option value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <div class="select-arrow"></div>
+              </div>
+              
+              <div class="select-wrapper">
+                <select id="day" name="day" required>
+                  <option value="" disabled selected>Day</option>
+                  <!-- Days will be populated by JavaScript -->
+                </select>
+                <div class="select-arrow"></div>
+              </div>
+              
+              <div class="select-wrapper">
+                <select id="year" name="year" required>
+                  <option value="" disabled selected>Year</option>
+                  <!-- Years will be populated by JavaScript -->
+                </select>
+                <div class="select-arrow"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+              </div>
+              
+              <div class="radio-option">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+          
+          <button type="submit" class="submit-btn">Sign Up!</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  
+        <script src="Auth.js"></script>
+    </body>
+</html>
