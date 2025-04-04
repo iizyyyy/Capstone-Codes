@@ -1,99 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="adminStyles.css">
-    <title>BTECH  Dashboard</title>    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="adminStyles.css">
+  <title>BTech Furnishing Dashboard</title>
 </head>
 
-<body class="furnishing-body">
-    <div class="dashboard-container">
-      <!-- Sidebar -->
-      <div class="dashboard-sidebar">
-        <div class="profile">
-          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin Profile">
-          <h3>Admin</h3>
-        </div>
-        
-        <nav>
-          <ul>
-            <li><a href="UserDashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="#"><i class="fas fa-calendar-check"></i> Reservation Request</a></li>
-            <li class="active"><a href="UserFurnishing.html"><i class="fas fa-couch"></i> Furnishing Management</a></li>
-            <li><a href="UserNotif.html"><i class="fas fa-bell"></i> Notifications & Alerts</a></li>
-            <li><a href="#"><i class="fas fa-qrcode"></i> QR Code Scanning & Quick Access</a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
-          </ul>
-        </nav>
+<body>
+  <div class="header">
+    <header>  
+      <p class="first-line">BTECH</p>
+      <input type="text" placeholder="Search..." class="header-search"/>
+      <p class="second-line">FURNISHING</p>
+    </header>
+  </div>
+  
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin" />
+        <h2>Admin</h2>
       </div>
 
-      <div class="dashboard-main-content">
-        <!-- Header -->
-        <div class="dashboard-header">
-          <div class="brand">
-            <h1>BTECH FURNISHING</h1>
+      <nav class="nav">
+        <a href="AdminDashboard.html">
+            <button> Dashboard </button>
+        </a>
+
+        <a href="AdminFurnishing.html">
+            <button> Furnishing Management </button>
+        </a>
+        
+        <a href="AdminReservation.html">
+            <button> Reservation Management </button>
+        </a>
+
+        <a href="AdminInv.html">
+            <button> Inventory Monitoring </button>
+        </a>
+
+        <a href="AdminNotif.html">
+            <button> Notifications & Alerts </button>
+        </a>
+
+        <a href="#"></a>
+            <button>Log out</button>
+        </a>
+
+    </nav>
+</aside>
+
+    <main class="main">
+      <section class="overview">
+        <h1>Dashboard Overview</h1>
+        <div class="cards">
+          <div class="card">
+            
+            <p>Total Furnishing</p>
+            <span>20</span>
           </div>
-          <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <button class="search-button"><i class="fas fa-search"></i></button>
+
+          <div class="card">
+            <div></div>
+            <p>Available</p>
+            <span>13</span>
           </div>
+
+          <div class="card">
+            <div></div>
+            <p>Reservation</p>
+            <span>7</span>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="alerts">
+        <h2>Real-Time Alerts</h2>
+        <div class="alert">
+          <p>Chair in Room 101 is damaged</p>
+          <span class="damage">Damage Alert</span>
+          <button onclick="dismiss(this)">Dismiss</button>
         </div>
 
-        <main class="main">
-            <h2>Dashboard Overview</h2>
-            <div class="dashboard-overview">
-                <div class="overview-box">
-                    <img src= "C:\Users\PC\Downloads\FURNISHING ICON.png " alt="Total Furnishing">
-                    <p>Total Furnishing</p>
-                    <span>20</span>
-                </div>
-                <div class="overview-box">
-                    <img src="C:\Users\PC\Downloads\AVAILABLE ICON.png " alt="Available">
-                    <p>Available</p>
-                    <span>13</span>
-                </div>
-                <div class="overview-box">
-                    <img src= "C:\Users\PC\Downloads\RESERVATION ICON.jpg" alt="Reservation">
-                    <p>Reservation</p>
-                    <span>7</span>
-                </div>
-            </div>
-
-                <div class="activity-log">
-                    <h2>Recent Activity Logs</h2>
-                    <div class="activity-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Item Details</th>
-                                    <th>Name</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Status Update</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src=" " alt="QR Code"></td>
-                                    <td>Mj Castillo</td>
-                                    <td>03/17/25</td>
-                                    <td>11:29 am</td>
-                                    <td><span class="status-pending">Pending</span></td>
-                                </tr>
-                                <tr>
-                                    <td><img src=" " alt="QR Code"></td>
-                                    <td>Mj Castillo</td>
-                                    <td>03/17/25</td>
-                                    <td>11:29 am</td>
-                                    <td><span class="status-overdue">Overdue</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </main>
+        <div class="alert">
+          <p>Table in Room 101 required maintenance</p>
+          <span class="maintenance">Maintenance Alert</span>
+          <button onclick="dismiss(this)">Dismiss</button>
         </div>
-    </body>
+
+        <div class="alert">
+          <p>Projector from Room 103 is missing</p>
+          <span class="missing">Missing Item Alert</span>
+          <button onclick="dismiss(this)">Dismiss</button>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function dismiss(button) {
+      button.parentElement.style.display = "none";
+    }
+  </script>
+</body>
 </html>

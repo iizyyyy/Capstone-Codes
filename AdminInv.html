@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="adminStyles.css">
-  <title>Reservation Management</title>
+  <title>Inventory Monitoring</title>
 </head>
 
 <body>
@@ -15,7 +15,6 @@
       <p class="second-line">FURNISHING</p>
     </header>
   </div>
-
   <div class="container">
     <aside class="sidebar">
       <div class="profile">
@@ -29,8 +28,8 @@
         </a>
 
         <a href="AdminFurnishing.html">
-          <button> Furnishing Management </button>
-      </a>
+            <button> Furnishing Management </button>
+        </a>
         
         <a href="AdminReservation.html">
             <button> Reservation Management </button>
@@ -52,68 +51,42 @@
 </aside>
 
     <main class="main">
-      <div class="form-section">
-        <h3>*Borrower Details</h3>
-        <div class="form-grid">
-          <input type="text" placeholder="Name" />
-          <input type="date" placeholder="Date Borrowed" />
-          <input type="text" placeholder="Contact Number" />
-          <input type="date" placeholder="Date of Return" />
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-          <input type="text" placeholder="Transferred to: (Campus)" />
-          <input type="text" placeholder="Purpose of Use" />
-        </div>
-      </div>
-
       <div class="table">
         <table>
           <thead>
             <tr>
               <th>QR Code</th>
               <th>Item</th>
-              <th>Request By</th>
-              <th>Date</th>
+              <th>Location</th>
               <th>Status</th>
-              <th>Action</th>
+              <th>Last Maintenance</th>
+              <th>Past Reservations</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Chair101" class="qr-img" /></td>
               <td>Chair</td>
-              <td>MJ Castillo</td>
+              <td>Classroom 101</td>
+              <td class="status-available">Available</td>
               <td>March 24, 2025</td>
-              <td>Pending</td>
-              <td>
-                <button class="action-btn approve">Approve</button>
-                <button class="action-btn reject">Reject</button>
-              </td>
+              <td>None</td>
             </tr>
             <tr>
               <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Table102" class="qr-img" /></td>
               <td>Table</td>
-              <td>Bryan</td>
+              <td>Classroom 101</td>
+              <td class="status-reserved">Reserved</td>
               <td>March 20, 2025</td>
-              <td>Pending</td>
-              <td>
-                <button class="action-btn approve">Approve</button>
-                <button class="action-btn reject">Reject</button>
-              </td>
+              <td>March 22, 2025</td>
             </tr>
             <tr>
               <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Projector103" class="qr-img" /></td>
               <td>Projector</td>
-              <td>Micaella</td>
+              <td>Classroom 103</td>
+              <td class="status-maintenance">Under Maintenance</td>
               <td>March 22, 2025</td>
-              <td>Pending</td>
-              <td>
-                <button class="action-btn approve">Approve</button>
-                <button class="action-btn reject">Reject</button>
-              </td>
+              <td>March 12, 2025</td>
             </tr>
           </tbody>
         </table>

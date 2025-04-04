@@ -3,228 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="userStyles.css">
   <title>Borrowing Req Form Page</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #eaeaea;
-    }
-
-    .container {
-      display: flex;
-      height: 100vh;
-    }
-
-    .sidebar {
-      width: 250px;
-      background: #d6d6d6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-    }
-
-    .profile img {
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-    }
-
-    .profile h2 {
-      margin-top: 10px;
-    }
-
-    .nav {
-      margin-top: 30px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .nav button {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      background: none;
-      text-align: left;
-      padding-left: 20px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .nav button:hover{
-      background-color: #4a90e2;
-      color: white;
-      font-weight: bold;
-    }
-
-    .main {
-      flex: 1;
-      padding: 30px;
-    }
-
-    header {
-      background-color: white;
-      padding: 25px;
-    }
-
-    .header-content {
-      display: flex;
-      justify-content: column; 
-      align-items: center; 
-      gap: 10px; 
-    }
-    
-    .header-search {
-      width: 30%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      background-color: white;
-      margin: -1% 70%; 
-      display: block;
-    }
-
-    .first-line {
-      color: #4580C5;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      margin: 0;
-      margin-left: 60px;
-      font-family: 'Times New Roman';
-    }
-        
-    .second-line {
-      color: #4580C5;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      margin: 0;
-      margin-left: 20px;
-      font-family: 'Times New Roman';
-    }
-
-    .form-box {
-      background-color: white;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      width: 960px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: blue;
-      padding: 10px;
-    }
-
-    .borr-details {
-      font-weight: bold;
-      color: gray;
-      margin-left: 20px;
-      padding: 10px;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    .qrcode {
-      width: 25%;
-    }
-
-    form {
-      display: flex; 
-      gap: 20px;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    label {
-      font-weight: bold;
-      font-size: 15px;
-    }
-
-    .form-left,
-    .form-right {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    input, select {
-      width: 240px;
-      padding: 8px;
-      border: 1px solid #ccc;
-      background: #ccc;
-      border-radius: 5px;
-      outline-color: rgb(79, 148, 204);
-    }
-    
-    option {
-      width: 20px;
-    }
-
-    .form-btn {
-      display: flex;
-      gap: 30px;
-      margin-left: auto;
-      padding: 10px;
-    }  
-
-    .sub-req {
-      padding: 15px;
-      background: #497ebb;
-      color: white;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-    }
-
-    .sub-req:hover {
-      background-color: #4a90e2;
-      color: white;
-      font-weight: bold;
-    }
-
-    .cancel-btn {
-      width: 80px;
-      font-weight: bold;
-      cursor: pointer;
-      background: #ccc;
-    }
-
-    .cancel-btn:hover {
-      border: 1px solid blue;
-    }
-
-    .opt {
-      width: 50px;
-      font-weight: bold;
-      margin-top: -20px;
-      cursor: pointer;
-    }
-
-    .qty {
-      font-weight: bold;
-    }
-
-  @media (max-width: 768px) {
-  .table {
-    overflow-x: auto;
-  }
-}
-  </style>
 </head>
-<body>
 
+<body>
   <div class="header">
     <header>  
       <p class="first-line">BTECH</p>
@@ -236,20 +19,28 @@
   <div class="container">
     <aside class="sidebar">
       <div class="profile">
-        <img src="btechlogo.jpg" alt="Admin">
-        <h2>Admin</h2>
+        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin">
+        <h2> User </h2>
       </div>
       <nav class="nav">
-        <button>Dashboard</button>
-        <button>Furnishing Management</button>
-        <button>Reservation Management</button>
-        <button>Inventory Monitoring</button>
-        <button>Notifications & Alerts</button>
-        <button>Borrowing Request Form</button>
-        <button>Scan QR Code Borrowing Request Form</button>
+        <a href="UserDashboard.html">
+            <button> Dashboard </button>
+        </a>
+        <a href="RESERVATION REQUEST (ADMIN).html">
+            <button> Reservation Request </button>
+        </a>
+        <a href="UserFurnishing.html">
+            <button> Furnishing Management </button>
+        </a>
+        <a href="UserNotif.html">
+            <button> Notifications & Alerts</button>
+        </a>
+        <a href="UserQRScan.html">
+            <button> QR Code Scanning & Quick Access </button>
+        </a>
         <button>Log out</button>
-      </nav>
-    </aside>
+    </nav>
+</aside>
 
       <div class="form-box">
         <div class="box">
@@ -273,7 +64,6 @@
                 <input type="tel" name="contact-number">
               </div>
         
-            
                 <p class="qty">Quantity</p>
                 <select class="opt">
                   <option>1</option>
