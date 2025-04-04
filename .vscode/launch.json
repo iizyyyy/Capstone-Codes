@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open Registration.html",
-            "file": "d:\\Capstone Codes\\signup.html"
+            "file": "d:\\Capstone Codes\\UserSignup.html"
         }
     ]
 }
