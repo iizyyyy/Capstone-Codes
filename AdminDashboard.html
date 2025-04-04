@@ -8,42 +8,38 @@
     <title>BTECH  Dashboard</title>    
 </head>
 
-<body>
-    <header>
-        <div class="header-content">
-            <div class="header-title">
-                <p>BTECH</p>
-                <p>FURNISHING</p>
-            </div>
-            <input type="text" placeholder="Search..." class="header-search">
+<body class="furnishing-body">
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <div class="dashboard-sidebar">
+        <div class="profile">
+          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin Profile">
+          <h3>Admin</h3>
         </div>
-    </header>
-    
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile">
-                <img src="https://raw.githubusercontent.com/iizyyyy/Capstone Codes/main/images/btechlogo.jpg" alt="User Profile">
-                <h2>Admin</h2>
-            </div>
-            <nav class="nav">
-                <a href="DASHBOARD (ADMIN).html">
-                    <button> Dashboard </button>
-                    </a>
-                    <a href="FURNISHING MANAGEMENT (ADMIN).html">
-                        <button> Furnishing Management </button>
-                        </a>
-                        <a href="RESERVATION REQUEST (ADMIN).html">
-                            <button> Reservation Request </button>
-                            </a>
-                            <a href="INVENTORY MONITORING (ADMIN).html">
-                                <button> Inventory Monitoring</button>
-                                </a>
-                                <a href="NOTIFICATION & ALERT (ADMIN).html">
-                                    <button> Notifications & Alerts</button>
-                                    </a>
-                <button>Log out</button>
-            </nav>
-        </aside>
+        
+        <nav>
+          <ul>
+            <li><a href="UserDashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-calendar-check"></i> Reservation Request</a></li>
+            <li class="active"><a href="UserFurnishing.html"><i class="fas fa-couch"></i> Furnishing Management</a></li>
+            <li><a href="UserNotif.html"><i class="fas fa-bell"></i> Notifications & Alerts</a></li>
+            <li><a href="#"><i class="fas fa-qrcode"></i> QR Code Scanning & Quick Access</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="dashboard-main-content">
+        <!-- Header -->
+        <div class="dashboard-header">
+          <div class="brand">
+            <h1>BTECH FURNISHING</h1>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
 
         <main class="main">
             <h2>Dashboard Overview</h2>
