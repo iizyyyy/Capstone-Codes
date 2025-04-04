@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="adminStyles.css">
+    <title>BTECH  Dashboard</title>    
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-title">
+                <p>BTECH</p>
+                <p>FURNISHING</p>
+            </div>
+            <input type="text" placeholder="Search..." class="header-search">
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="https://raw.githubusercontent.com/iizyyyy/Capstone Codes/main/images/btechlogo.jpg" alt="User Profile">
+                <h2>Admin</h2>
+            </div>
+            <nav class="nav">
+                <a href="DASHBOARD (ADMIN).html">
+                    <button> Dashboard </button>
+                    </a>
+                    <a href="FURNISHING MANAGEMENT (ADMIN).html">
+                        <button> Furnishing Management </button>
+                        </a>
+                        <a href="RESERVATION REQUEST (ADMIN).html">
+                            <button> Reservation Request </button>
+                            </a>
+                            <a href="INVENTORY MONITORING (ADMIN).html">
+                                <button> Inventory Monitoring</button>
+                                </a>
+                                <a href="NOTIFICATION & ALERT (ADMIN).html">
+                                    <button> Notifications & Alerts</button>
+                                    </a>
+                <button>Log out</button>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <h2>Dashboard Overview</h2>
+            <div class="dashboard-overview">
+                <div class="overview-box">
+                    <img src= "C:\Users\PC\Downloads\FURNISHING ICON.png " alt="Total Furnishing">
+                    <p>Total Furnishing</p>
+                    <span>20</span>
+                </div>
+                <div class="overview-box">
+                    <img src="C:\Users\PC\Downloads\AVAILABLE ICON.png " alt="Available">
+                    <p>Available</p>
+                    <span>13</span>
+                </div>
+                <div class="overview-box">
+                    <img src= "C:\Users\PC\Downloads\RESERVATION ICON.jpg" alt="Reservation">
+                    <p>Reservation</p>
+                    <span>7</span>
+                </div>
+            </div>
+
+                <div class="activity-log">
+                    <h2>Recent Activity Logs</h2>
+                    <div class="activity-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item Details</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Status Update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src=" " alt="QR Code"></td>
+                                    <td>Mj Castillo</td>
+                                    <td>03/17/25</td>
+                                    <td>11:29 am</td>
+                                    <td><span class="status-pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src=" " alt="QR Code"></td>
+                                    <td>Mj Castillo</td>
+                                    <td>03/17/25</td>
+                                    <td>11:29 am</td>
+                                    <td><span class="status-overdue">Overdue</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
