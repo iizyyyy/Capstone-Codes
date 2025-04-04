@@ -134,6 +134,10 @@ header {
   color: #2a5db0;
 }
 
+.card-icon i {
+  font-size: 40px;
+}
+
 .alerts h2 {
   color: #2a5db0;
   margin-top: 30px;
