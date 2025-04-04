@@ -128,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Here you would typically send the data to a server
         showAlert('Sign up successful!');
+        window.location.href = 'UserLogin.html';
         signupForm.reset();
       });
     }
