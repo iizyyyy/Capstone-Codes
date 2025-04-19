@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item Issue - BTECH FURNISHING</title>
+</head>
+
+  <style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(159deg, rgba(8,146,208,1) 0%, rgba(75,0,130,1) 100%);
+}
+
+.report-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.report-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+hr {
+    margin-top: -10px;
+}
+
+.report-form label {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+}
+
+.report-form input,
+.report-form select,
+.report-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.report-form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.report-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #444;
+}
+
+</style>
+
+    <body>
+        <div class="report-form">
+            <h2>Report Damaged or Missing Item</h2>
+            <hr style="padding: 1px; background-color: black;">
+            <form>
+            <label for="item_id">Item ID:</label>
+            <input type="text" id="item_id" name="item_id" placeholder="e.g. 123456" required>
+
+            <label for="location">Location:</label>
+            <select name="location" id="location" required>
+                <option value="location">--Select--</option>
+                <option value="#">1</option>
+                <option value="#">2</option>  
+                <option value="#">3</option> 
+            </select>
+
+            <label for="issue_type">Issue Type:</label>
+            <select id="issue_type" name="issue_type" required>
+                <option value="">--Select--</option>
+                <option value="damaged">Damaged Item</option>
+                <option value="missing">Missing Item</option>
+            </select>
+
+            <label for="description">Issue Details:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Describe the issue..."></textarea>
+
+            <input type="submit" value="Submit Report">
+            <a href="UserLogin.html" class="back-link">Back to Login</a>
+            </form>
+        </div>
+    </body>
+</html>

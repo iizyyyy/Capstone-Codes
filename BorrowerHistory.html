@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="borrowerStyles.css">
+    <title>Borrower Reservation History - BTECH FURNISHING</title>
+</head>
+
+<body>
+    <div class="header">
+      <header>  
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search"/>
+        <p class="second-line">FURNISHING</p>
+      </header>
+    </div>
+    
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
+          <h2> Borrower </h2>
+        </div>
+  
+        <nav class="nav">
+          <nav class="nav">
+            <a href="BorrowerDashboard.html">
+                <button> Dashboard </button>
+            </a>
+    
+            <a href="BorrowerReservation.html">
+                <button> Reservation Request </button>
+            </a>
+            
+            <a href="BorrowerHistory.html">
+                <button> Reservation History </button>
+            </a>
+            
+            <a href="BorrowerFurnishing.html">
+                <button> Furnishing Management </button>
+            </a>
+    
+            <a href="BorrowerNotif.html">
+                <button> Notifications & Alerts </button>
+            </a>
+    
+            <a href="#">
+                <button> QR Code Scanning & Quick Access </button>
+            </a>
+    
+            <a href="BorrowerReport.html">
+              <button>Report Furnishing Status</button>
+            </a>
+  
+            <a href="BorrowerLogin.html">
+                <button>Log out</button>
+            </a>
+        </nav>
+    </aside>
+      
+    <main class="main">
+      <section class="reservation-history">
+        <h2>Reservation History</h2>
+        
+        <!-- Filter Options -->
+        <div class="filter-options">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Pending</button>
+          <button class="filter-btn">Approved</button>
+          <button class="filter-btn">Rejected</button>
+          <button class="filter-btn">Completed</button>
+          <button class="filter-btn">Overdue</button>
+        </div>
+        
+        <div class="form-section">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Reservation Date</th>
+                <th>Return Date</th>
+                <th>Purpose</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="item-details">
+                    <img src="https://via.placeholder.com/50x50/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                    <span>Office Chair</span>
+                  </div>
+                </td>
+                <td>03/15/25</td>
+                <td>03/20/25</td>
+                <td>Office Use</td>
+                <td><span class="status-badge status-approved">Approved</span></td>
+                <td><button class="view-btn">View Details</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-details">
+                    <img src="https://via.placeholder.com/50x50/CD853F/FFFFFF?text=Table" alt="Table" class="item-image">
+                    <span>Conference Table</span>
+                  </div>
+                </td>
+                <td>03/10/25</td>
+                <td>03/12/25</td>
+                <td>Meeting</td>
+                <td><span class="status-badge status-completed">Completed</span></td>
+                <td><button class="view-btn">View Details</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-details">
+                    <img src="https://via.placeholder.com/50x50/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                    <span>Ergonomic Chair</span>
+                  </div>
+                </td>
+                <td>03/17/25</td>
+                <td>03/24/25</td>
+                <td>Personal Use</td>
+                <td><span class="status-badge status-pending">Pending</span></td>
+                <td><button class="view-btn">View Details</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-details">
+                    <img src="https://via.placeholder.com/50x50/8B4513/FFFFFF?text=Desk" alt="Desk" class="item-image">
+                    <span>Standing Desk</span>
+                  </div>
+                </td>
+                <td>02/28/25</td>
+                <td>03/10/25</td>
+                <td>Office Use</td>
+                <td><span class="status-badge status-overdue">Overdue</span></td>
+                <td><button class="view-btn">View Details</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item-details">
+                    <img src="https://via.placeholder.com/50x50/A0522D/FFFFFF?text=Cabinet" alt="Cabinet" class="item-image">
+                    <span>Filing Cabinet</span>
+                  </div>
+                </td>
+                <td>02/20/25</td>
+                <td>03/01/25</td>
+                <td>Document Storage</td>
+                <td><span class="status-badge status-rejected">Rejected</span></td>
+                <td><button class="view-btn">View Details</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

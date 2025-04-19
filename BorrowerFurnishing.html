@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="borrowerStyles.css">
+    <title>Borrower Furnishing Management - BTECH FURNISHING</title>
+</head>
+
+<body>
+    <div class="header">
+      <header>  
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search"/>
+        <p class="second-line">FURNISHING</p>
+      </header>
+    </div>
+    
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
+          <h2> Borrower </h2>
+        </div>
+  
+        <nav class="nav">
+          <nav class="nav">
+            <a href="BorrowerDashboard.html">
+                <button> Dashboard </button>
+            </a>
+    
+            <a href="BorrowerReservation.html">
+                <button> Reservation Request </button>
+            </a>
+            
+            <a href="BorrowerHistory.html">
+                <button> Reservation History </button>
+            </a>
+            
+            <a href="BorrowerFurnishing.html">
+                <button> Furnishing Management </button>
+            </a>
+    
+            <a href="BorrowerNotif.html">
+                <button> Notifications & Alerts </button>
+            </a>
+    
+            <a href="#">
+                <button> QR Code Scanning & Quick Access </button>
+            </a>
+    
+            <a href="BorrowerReport.html">
+              <button>Report Furnishing Status</button>
+            </a>
+  
+            <a href="BorrowerLogin.html">
+                <button>Log out</button>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="main">
+      <div class="furnishing-management">
+        <h2>Furnishing Management</h2>
+        
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>QR Code</th>
+                <th>Image of the Item</th>
+                <th>Quantity</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR001" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>1</td>
+                <td><span class="status-badge status-available">Available</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=TABLE001" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/CD853F/FFFFFF?text=Table" alt="Table" class="item-image">
+                </td>
+                <td>1</td>
+                <td><span class="status-badge status-maintenance">Under Maintenance</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=TABLE002" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/CD853F/FFFFFF?text=Table" alt="Table" class="item-image">
+                </td>
+                <td>6</td>
+                <td><span class="status-badge status-available">Available</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR002" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>10</td>
+                <td><span class="status-badge status-available">Available</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR003" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>1</td>
+                <td><span class="status-badge status-reserved">Reserved</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR004" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>7</td>
+                <td><span class="status-badge status-maintenance">Under Maintenance</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=CHAIR005" alt="QR Code" class="qr-img">
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/60x60/4682B4/FFFFFF?text=Chair" alt="Chair" class="item-image">
+                </td>
+                <td>3</td>
+                <td><span class="status-badge status-reserved">Reserved</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="custodianStyles.css">
+    <title>Custodian Reports - BTECH FURNISHING</title>
+</head>
+
+    <body>
+        <div class="header">
+            <header>  
+            <p class="first-line">BTECH</p>
+            <input type="text" placeholder="Search..." class="header-search"/>
+            <p class="second-line">FURNISHING</p>
+            </header>
+        </div>
+        
+        <div class="container">
+            <aside class="sidebar">
+            <div class="profile">
+                <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin" />
+                <h2> Custodian </h2>
+            </div>
+
+            <nav class="nav">
+                <a href="CustodianDashboard.html">
+                    <button> Dashboard </button>
+                </a>
+        
+                <a href="CustodianFurnishing.html">
+                    <button> Furnishing Management </button>
+                </a>
+                
+                <a href="CustodianReservation.html">
+                    <button> Reservation Management </button>
+                </a>
+        
+                <a href="CustodianInv.html">
+                    <button> Inventory Monitoring </button>
+                </a>
+        
+                <a href="CustodianNotif.html">
+                    <button> Notifications & Alerts </button>
+                </a>
+        
+                <a href="CustodianReports.html">
+                  <button> Reports & Data Analysis </button>
+                </a>
+        
+                <a href="CustodianLogin.html">
+                  <button>Log out</button>
+                </a>
+        
+            </nav>
+        </aside>
+
+            <main class="main">
+                <!-- Report 1: Furnishings per Category -->
+                <div class="report-section">
+                    <h2><i class="fas fa-chart-pie"></i> Furnishings by Category</h2>
+                    
+                    <div class="report-filters">
+                    <button class="filter-btn active">All Time</button>
+                    <button class="filter-btn">This Month</button>
+                    <button class="filter-btn">This Year</button>
+                    </div>
+                    
+                    <div class="report-grid">
+                    <div class="category-card">
+                        <i class="fas fa-chair"></i>
+                        <h3>Chairs</h3>
+                        <div class="count">24</div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <i class="fas fa-table"></i>
+                        <h3>Tables</h3>
+                        <div class="count">12</div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Desks</h3>
+                        <div class="count">8</div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <i class="fas fa-archive"></i>
+                        <h3>Cabinets</h3>
+                        <div class="count">6</div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <i class="fas fa-couch"></i>
+                        <h3>Sofas</h3>
+                        <div class="count">4</div>
+                    </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                    <!-- This would be replaced with an actual chart in a real implementation -->
+                    <img src="https://via.placeholder.com/800x300?text=Category+Distribution+Chart" alt="Category Distribution Chart" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    
+                    <button class="export-btn">
+                    <i class="fas fa-file-export"></i> Export Report
+                    </button>
+                </div>
+                
+                <!-- Damaged or Missing Furnishings -->
+                <div class="report-section">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Damaged or Missing Furnishings</h2>
+                    
+                    <div class="search-filter">
+                    <input type="text" placeholder="Search by item name or ID...">
+                    <button class="filter-btn">Filter</button>
+                    </div>
+                    
+                    <div class="damaged-items-list">
+                    <div class="damaged-item">
+                        <img src="https://via.placeholder.com/50x50/4682B4/FFFFFF?text=Chair" alt="Office Chair">
+                        <div class="details">
+                        <h3>Office Chair (ID: CH-001)</h3>
+                        <p>Location: Room 101</p>
+                        <p>Reported on: 03/15/25</p>
+                        </div>
+                        <span class="status status-damaged">Damaged</span>
+                    </div>
+                    
+                    <div class="damaged-item">
+                        <img src="https://via.placeholder.com/50x50/CD853F/FFFFFF?text=Table" alt="Conference Table">
+                        <div class="details">
+                        <h3>Conference Table (ID: TB-003)</h3>
+                        <p>Location: Meeting Room A</p>
+                        <p>Reported on: 03/10/25</p>
+                        </div>
+                        <span class="status status-damaged">Damaged</span>
+                    </div>
+                    
+                    <div class="damaged-item">
+                        <img src="https://via.placeholder.com/50x50/A0522D/FFFFFF?text=Cabinet" alt="Filing Cabinet">
+                        <div class="details">
+                        <h3>Filing Cabinet (ID: FC-002)</h3>
+                        <p>Location: Admin Office</p>
+                        <p>Reported on: 03/05/25</p>
+                        </div>
+                        <span class="status status-missing">Missing</span>
+                    </div>
+                    
+                    <div class="damaged-item">
+                        <img src="https://via.placeholder.com/50x50/8B4513/FFFFFF?text=Desk" alt="Standing Desk">
+                        <div class="details">
+                        <h3>Standing Desk (ID: DK-005)</h3>
+                        <p>Location: Room 203</p>
+                        <p>Reported on: 02/28/25</p>
+                        </div>
+                        <span class="status status-damaged">Damaged</span>
+                    </div>
+                    </div>
+                    
+                    <button class="export-btn">
+                    <i class="fas fa-file-export"></i> Export Report
+                    </button>
+                </div>
+                
+                <!-- Maintenance History -->
+                <div class="report-section">
+                    <h2><i class="fas fa-tools"></i> Maintenance History</h2>
+                    
+                    <div class="date-filter">
+                    <label>Date Range:</label>
+                    <input type="date" value="2025-01-01">
+                    <span>to</span>
+                    <input type="date" value="2025-03-31">
+                    <button class="filter-btn">Apply</button>
+                    </div>
+                    
+                    <div class="search-filter">
+                    <input type="text" placeholder="Search by item ID or maintenance type...">
+                    <select>
+                        <option value="">All Items</option>
+                        <option value="chair">Chairs</option>
+                        <option value="table">Tables</option>
+                        <option value="desk">Desks</option>
+                        <option value="cabinet">Cabinets</option>
+                    </select>
+                    <button class="filter-btn">Filter</button>
+                    </div>
+                    
+                    <table class="maintenance-history">
+                    <thead>
+                        <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Maintenance Type</th>
+                        <th>Date</th>
+                        <th>Performed By</th>
+                        <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>CH-001</td>
+                        <td>Office Chair</td>
+                        <td>Repair</td>
+                        <td>03/20/25</td>
+                        <td>John Smith</td>
+                        <td>Completed</td>
+                        </tr>
+                        <tr>
+                        <td>TB-003</td>
+                        <td>Conference Table</td>
+                        <td>Cleaning</td>
+                        <td>03/15/25</td>
+                        <td>Maria Garcia</td>
+                        <td>Completed</td>
+                        </tr>
+                        <tr>
+                        <td>DK-005</td>
+                        <td>Standing Desk</td>
+                        <td>Repair</td>
+                        <td>03/10/25</td>
+                        <td>John Smith</td>
+                        <td>In Progress</td>
+                        </tr>
+                        <tr>
+                        <td>CH-008</td>
+                        <td>Ergonomic Chair</td>
+                        <td>Replacement</td>
+                        <td>03/05/25</td>
+                        <td>David Lee</td>
+                        <td>Completed</td>
+                        </tr>
+                        <tr>
+                        <td>TB-002</td>
+                        <td>Coffee Table</td>
+                        <td>Repair</td>
+                        <td>02/28/25</td>
+                        <td>Maria Garcia</td>
+                        <td>Completed</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                    <button class="export-btn">
+                    <i class="fas fa-file-export"></i> Export Report
+                    </button>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
