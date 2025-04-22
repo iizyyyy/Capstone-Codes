@@ -1,122 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
-    <link rel="stylesheet" href="custodianStyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Times New Roman"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="custodianStyles.css" />
     <title>Custodian Dashboard - BTECH FURNISHING</title>
-</head>
+  </head>
 
-<body>
-  <div class="header">
-    <header>  
-      <p class="first-line">BTECH</p>
-      <input type="text" placeholder="Search..." class="header-search"/>
-      <p class="second-line">FURNISHING</p>
-    </header>
-  </div>
-  
-  <div class="container">
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin" />
-        <h2> Custodian </h2>
-      </div>
+  <body>
+    <div class="header">
+      <header>
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search" />
+        <p class="second-line">FURNISHING</p>
+      </header>
+    </div>
 
-      <nav class="nav">
-        <a href="CustodianDashboard.html">
-          <button style="background-color: #4a90e2; color: white; font-weight: bold; border-radius: 0px 15px 15px 0px;"> Dashboard </button>
-        </a>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img
+            src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg"
+            alt="Admin"
+          />
+          <h2>Custodian</h2>
+        </div>
 
-        <a href="CustodianFurnishing.html">
-          <button> Furnishing Management </button>
-        </a>
-        
-        <a href="CustodianReservation.html">
-          <button> Reservation Management </button>
-        </a>
+        <nav class="nav">
+          <a href="CustodianDashboard.html">
+            <button
+              style="
+                background-color: #4a90e2;
+                color: white;
+                font-weight: bold;
+                border-radius: 0px 15px 15px 0px;
+              "
+            >
+              Dashboard
+            </button>
+          </a>
 
-        <a href="CustodianInv.html">
-          <button> Inventory Monitoring </button>
-        </a>
+          <a href="CustodianFurnishing.html">
+            <button>Furnishing Management</button>
+          </a>
 
-        <a href="CustodianNotif.html">
-          <button> Notifications & Alerts </button>
-        </a>
+          <a href="CustodianReservation.html">
+            <button>Reservation Management</button>
+          </a>
 
-        <a href="CustodianReports.html">
-          <button> Reports & Data Analysis </button>
-        </a>
+          <a href="CustodianInv.html">
+            <button>Inventory Monitoring</button>
+          </a>
 
-        <a href="CustodianLogin.html">
-          <button>Log out</button>
-        </a>
+          <a href="CustodianNotif.html">
+            <button>Notifications & Alerts</button>
+          </a>
 
-    </nav>
-</aside>
+          <a href="CustodianReports.html">
+            <button>Reports & Data Analysis</button>
+          </a>
 
-    <main class="main">
-      <section class="overview">
-        <h1>Dashboard Overview</h1>
-        <div class="cards">
+          <a href="CustodianLogin.html">
+            <button>Log out</button>
+          </a>
+        </nav>
+      </aside>
 
-        <div class="card">
-            <div class="card-icon">
+      <main class="main">
+        <section class="overview">
+          <h1>Dashboard Overview</h1>
+          <div class="cards">
+            <div class="card">
+              <div class="card-icon">
                 <i class="fas fa-table"></i>
                 <p>Total Furnishing</p>
                 <span>20</span>
+              </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-icon">
+            <div class="card">
+              <div class="card-icon">
                 <i class="fas fa-check"></i>
                 <p>Available</p>
                 <span>13</span>
+              </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-icon">
+            <div class="card">
+              <div class="card-icon">
                 <i class="fas fa-calendar-check"></i>
                 <p>Reservation</p>
                 <span>7</span>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
-        </div>
-      </section>
+        <section class="alerts">
+          <h2>Real-Time Alerts</h2>
+          <div class="alert">
+            <p>Chair in Room 101 is damaged</p>
+            <span class="damage">Damage Alert</span>
+            <button onclick="dismiss(this)">Dismiss</button>
+          </div>
 
-      <section class="alerts">
-        <h2>Real-Time Alerts</h2>
-        <div class="alert">
-          <p>Chair in Room 101 is damaged</p>
-          <span class="damage">Damage Alert</span>
-          <button onclick="dismiss(this)">Dismiss</button>
-        </div>
+          <div class="alert">
+            <p>Table in Room 101 required maintenance</p>
+            <span class="maintenance">Maintenance Alert</span>
+            <button onclick="dismiss(this)">Dismiss</button>
+          </div>
 
-        <div class="alert">
-          <p>Table in Room 101 required maintenance</p>
-          <span class="maintenance">Maintenance Alert</span>
-          <button onclick="dismiss(this)">Dismiss</button>
-        </div>
+          <div class="alert">
+            <p>Projector from Room 103 is missing</p>
+            <span class="missing">Missing Item Alert</span>
+            <button onclick="dismiss(this)">Dismiss</button>
+          </div>
+        </section>
+      </main>
+    </div>
 
-        <div class="alert">
-          <p>Projector from Room 103 is missing</p>
-          <span class="missing">Missing Item Alert</span>
-          <button onclick="dismiss(this)">Dismiss</button>
-        </div>
-
-      </section>
-    </main>
-  </div>
-
-  <script>
-    function dismiss(button) {
-      button.parentElement.style.display = "none";
-    }
-  </script>
-</body>
+    <script>
+      function dismiss(button) {
+        button.parentElement.style.display = "none";
+      }
+    </script>
+  </body>
 </html>

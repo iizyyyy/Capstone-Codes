@@ -1,86 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="login.css" />
     <title>Borrower Log in Page</title>
-</head>
+  </head>
 
-    <body>
-        <div class="account">
-            <div class="account-1">
-            <a href="BorrowerLogin.html">
-                <button class="log-in">Log in</button>
-            </a>
-
-            <a href="BorrowerSignup.html">
-                <button class="sign-up">Sign up</button>
-            </a>
-        </div>
+  <body>
+    <div class="account">
+      <div class="account-1">
+        <a href="BorrowerLogin.html">
+          <button class="log-in">Log in</button>
+        </a>
+        <a href="BorrowerSignup.html">
+          <button class="sign-up">Sign up</button>
+        </a>
+      </div>
     </div>
 
     <div class="wrapper">
-        <div class="top-buttons">
+      <div class="top-buttons">
         <a href="BorrowerLogin.html">
-            <button class="active">Borrower</button>
+          <button class="active">Borrower</button>
         </a>
-
         <a href="CustodianLogin.html">
-            <button>Custodian</button>
+          <button>Custodian</button>
         </a>
-
         <a href="InstructorLogin.html">
-            <button>Instructor</button>
+          <button>Instructor</button>
         </a>
-    </div>
+      </div>
 
-    <div class="reset-container">
+      <div class="reset-container">
         <h1>Borrower Log in!</h1>
-        <p>Enter your details below</p><br>
+        <p>Enter your details below</p>
+        <br />
         <form>
-    <div class="form-group">
-        <label for="email">Email or Student ID</label>
-        <input type="email" id="email" name="email" required>
-    </div>
+          <div class="form-group">
+            <label for="email">Email or Student ID</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-    <div class="form-group">
+          <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+            <input type="password" id="password" name="password" required />
+          </div>
 
-    <div class="checkbox">
-        <input type="checkbox">
-        <label for="remember-me">Remember Me</label>
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember Me</label>
+          </div>
+
+          <button type="submit" class="submit-btn">Log in</button>
+
+          <div class="forgot-pass">
+            <a href="ResetPassword.html">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
     </div>
-        <button type="submit" class="submit-btn">Log in</button>
-    <div class="forgot-pass">
-        <a href="ResetPassword.html" class="forgot-pass">Forgot Password?</a>
-    </div>
-            </form>
-        </div>
 
-        <script>
-            document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault(); // stop form from submitting
-          
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-          
-            const validUsers = [
-                { email: 'borrower1@example.com', password: 'mypassword' },
-                { email: 'borrower2@example.com', password: 'password123' },
-                { email: 'borrower3@example.com', password: 'pass123' }
-            ];
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-            const userFound = validUsers.find(user => user.email === email && user.password === password);
-                if (userFound) {
-                window.location.href = 'BorrowerDashboard.html';
-                } else {
-                alert('Invalid email or password. Please try again.');
-            }
-            });
-        </script>
-    </body>
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const validUsers = [
+          { email: "borrower1@example.com", password: "mypassword" },
+          { email: "borrower2@example.com", password: "password123" },
+          { email: "borrower3@example.com", password: "pass123" },
+        ];
+
+        const userFound = validUsers.find(
+          (user) => user.email === email && user.password === password
+        );
+
+        if (userFound) {
+          window.location.href = "BorrowerDashboard.html";
+        } else {
+          alert("Invalid email or password. Please try again.");
+        }
+      });
+    </script>
+  </body>
 </html>

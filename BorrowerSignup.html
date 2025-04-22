@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="BorrowerSignup.css">
-    <title>Sign Up - BTECH FURNISHING</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="BorrowerSignup.css" />
+    <title>Borrower Sign Up - BTECH FURNISHING</title>
+  </head>
 
   <body>
     <div class="container">
@@ -21,29 +21,34 @@
           <form id="signupForm">
             <div class="form-group">
               <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" name="fullName" required>
+              <input type="text" id="fullName" name="fullName" required />
             </div>
-            
+
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" required />
             </div>
-            
+
             <div class="form-group">
               <label for="studentId">Student ID</label>
-              <input type="text" id="studentId" name="studentId" required>
+              <input type="text" id="studentId" name="studentId" required />
             </div>
-            
+
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" required>
+              <input type="password" id="password" name="password" required />
             </div>
-            
+
             <div class="form-group">
               <label for="confirmPassword">Confirm Password</label>
-              <input type="password" id="confirmPassword" name="confirmPassword" required>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
             </div>
-            
+
             <div class="dropdown-container">
               <div class="dropdown-group">
                 <label>Course</label>
@@ -52,23 +57,49 @@
                   <span class="dropdown-arrow"></span>
                 </div>
                 <div class="dropdown-options" id="courseOptions">
-                  <div class="dropdown-option" data-value="BSA">Bachelor of Science in Accountancy</div>
-                  <div class="dropdown-option" data-value="BSAIS">Bachelor of Science in Accounting Information System</div>
-                  <div class="dropdown-option" data-value="BSBA-FM">BSBA Major in Financial Management</div>
-                  <div class="dropdown-option" data-value="BSBA-MM">BSBA Major in Marketing Management</div>
-                  <div class="dropdown-option" data-value="BSBA-HRM">BSBA Major in Human Resource Management</div>
-                  <div class="dropdown-option" data-value="BEEd">Bachelor of Elementary Education</div>
-                  <div class="dropdown-option" data-value="BSEd">Bachelor of Secondary Education</div>
-                  <div class="dropdown-option" data-value="BSHM">Bachelor of Science in Hospitality Management</div>
-                  <div class="dropdown-option" data-value="BSTM">Bachelor of Science in Tourism Management</div>
-                  <div class="dropdown-option" data-value="BSIT">Bachelor of Science in Information Technology</div>
-                  <div class="dropdown-option" data-value="BK-NCIII">Bookkeeping NCIII</div>
-                  <div class="dropdown-option" data-value="FB-NCIII">Food and Beverage NCIII</div>
-                  <div class="dropdown-option" data-value="VGD-NCIII">Visual Graphics Design NCIII</div>
+                  <div class="dropdown-option" data-value="BSA">
+                    Bachelor of Science in Accountancy
+                  </div>
+                  <div class="dropdown-option" data-value="BSAIS">
+                    Bachelor of Science in Accounting Information System
+                  </div>
+                  <div class="dropdown-option" data-value="BSBA-FM">
+                    BSBA Major in Financial Management
+                  </div>
+                  <div class="dropdown-option" data-value="BSBA-MM">
+                    BSBA Major in Marketing Management
+                  </div>
+                  <div class="dropdown-option" data-value="BSBA-HRM">
+                    BSBA Major in Human Resource Management
+                  </div>
+                  <div class="dropdown-option" data-value="BEEd">
+                    Bachelor of Elementary Education
+                  </div>
+                  <div class="dropdown-option" data-value="BSEd">
+                    Bachelor of Secondary Education
+                  </div>
+                  <div class="dropdown-option" data-value="BSHM">
+                    Bachelor of Science in Hospitality Management
+                  </div>
+                  <div class="dropdown-option" data-value="BSTM">
+                    Bachelor of Science in Tourism Management
+                  </div>
+                  <div class="dropdown-option" data-value="BSIT">
+                    Bachelor of Science in Information Technology
+                  </div>
+                  <div class="dropdown-option" data-value="BK-NCIII">
+                    Bookkeeping NCIII
+                  </div>
+                  <div class="dropdown-option" data-value="FB-NCIII">
+                    Food and Beverage NCIII
+                  </div>
+                  <div class="dropdown-option" data-value="VGD-NCIII">
+                    Visual Graphics Design NCIII
+                  </div>
                 </div>
-                <input type="hidden" name="course" id="courseInput">
+                <input type="hidden" name="course" id="courseInput" />
               </div>
-              
+
               <div class="dropdown-group">
                 <label>Position/Role</label>
                 <div class="dropdown" id="roleDropdown">
@@ -77,13 +108,17 @@
                 </div>
 
                 <div class="dropdown-options" id="roleOptions">
-                  <div class="dropdown-option" data-value="borrower">Borrower</div>
-                  <div class="dropdown-option" data-value="instructor">Instructor</div>
+                  <div class="dropdown-option" data-value="borrower">
+                    Borrower
+                  </div>
+                  <div class="dropdown-option" data-value="instructor">
+                    Instructor
+                  </div>
                 </div>
-                <input type="hidden" name="role" id="roleInput">
+                <input type="hidden" name="role" id="roleInput" />
               </div>
             </div>
-            
+
             <button type="submit" class="submit-btn">Sign Up!</button>
           </form>
         </div>

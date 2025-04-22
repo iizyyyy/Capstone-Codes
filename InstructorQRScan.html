@@ -1,88 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
-    <link rel="stylesheet" href="instructorStyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Times+New+Roman"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="instructorStyles.css" />
     <script src="https://unpkg.com/html5-qrcode"></script>
     <title>Scan QR Code Borrowing Req Form Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-      <header>  
+      <header>
         <p class="first-line">BTECH</p>
-        <input type="text" placeholder="Search..." class="header-search"/>
+        <input type="text" placeholder="Search..." class="header-search" />
         <p class="second-line">FURNISHING</p>
       </header>
     </div>
-    
+
     <div class="container">
       <aside class="sidebar">
         <div class="profile">
-          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Instructor"/>
-          <h2> Instructor </h2>
+          <img
+            src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg"
+            alt="Instructor"
+          />
+          <h2>Instructor</h2>
         </div>
-  
+
         <nav class="nav">
           <a href="InstructorDashboard.html">
-              <button> Dashboard </button>
+            <button>Dashboard</button>
           </a>
 
           <a href="InstructorReservation.html">
-            <button> Reservation Request </button>
+            <button>Reservation Request</button>
           </a>
-          
+
           <a href="InstructorFurnishing.html">
-              <button> Furnishing Management </button>
+            <button>Furnishing Management</button>
           </a>
-  
+
           <a href="InstructorNotif.html">
-              <button> Notifications & Alerts </button>
+            <button>Notifications & Alerts</button>
           </a>
 
           <a href="InstructorQRScan.html">
-            <button style="background-color: #4a90e2; color: white; font-weight: bold; border-radius: 0px 15px 15px 0px;"> QR Code Scanning & Quick Access </button>
-            </a>
-  
-          <a href="InstructorLogin.html">
-              <button>Log out</button>
+            <button
+              style="
+                background-color: #4a90e2;
+                color: white;
+                font-weight: bold;
+                border-radius: 0px 15px 15px 0px;
+              "
+            >
+              QR Code Scanning & Quick Access
+            </button>
           </a>
-  
-      </nav>
-    </aside>
 
-    <div class="main">
-      <div class="qr-box">
+          <a href="InstructorLogin.html">
+            <button>Log out</button>
+          </a>
+        </nav>
+      </aside>
+
+      <div class="main">
+        <div class="qr-box">
           <h1>QR Code Scanner - Furnishing Details</h1>
-          <div id="qr-reader" class="qr-main-box">
-          </div>
+          <div id="qr-reader" class="qr-main-box"></div>
           <button class="scan-qr" onclick="startScanner()">Scan QR Code</button>
+        </div>
       </div>
-  </div>
-        <script>
-          function startScanner() {
-              const qrReader = new Html5Qrcode("qr-reader");
-      
-              qrReader.start(
-                  { facingMode: "environment" },
-                  {
-                      fps: 60,
-                      qrbox: 350
-                  },
-                  qrCodeMessage => {
-                      alert("QR Code scanned: " + qrCodeMessage);
-                      qrReader.stop();
-                      window.location.href = "BorrowerForm.html?qr=" + encodeURIComponent(qrCodeMessage); 
-                  },
-                  errorMessage => {
-                      console.warn("QR Error:", errorMessage);
-                  }
-              ).catch(err => {
-                  console.error("Error starting QR scanner:", err);
-              });
-          }
-      </script>
-    </body>
+    </div>
+
+    <script>
+      function startScanner() {
+        const qrReader = new Html5Qrcode("qr-reader");
+
+        qrReader
+          .start(
+            { facingMode: "environment" },
+            {
+              fps: 60,
+              qrbox: 350,
+            },
+            (qrCodeMessage) => {
+              alert("QR Code scanned: " + qrCodeMessage);
+              qrReader.stop();
+              window.location.href =
+                "BorrowerForm.html?qr=" + encodeURIComponent(qrCodeMessage);
+            },
+            (errorMessage) => {
+              console.warn("QR Error:", errorMessage);
+            }
+          )
+          .catch((err) => {
+            console.error("Error starting QR scanner:", err);
+          });
+      }
+    </script>
+  </body>
 </html>

@@ -1,129 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
-    <link rel="stylesheet" href="borrowerStyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Times New Roman"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="borrowerStyles.css" />
     <title>Borrower Borrowing Req Form - BTECH FURNISHING</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-      <header>  
+      <header>
         <p class="first-line">BTECH</p>
-        <input type="text" placeholder="Search..." class="header-search"/>
+        <input type="text" placeholder="Search..." class="header-search" />
         <p class="second-line">FURNISHING</p>
       </header>
     </div>
-    
+
     <div class="container">
       <aside class="sidebar">
         <div class="profile">
-          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
-          <h2> Borrower </h2>
+          <img
+            src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg"
+            alt="User"
+          />
+          <h2>Borrower</h2>
         </div>
-  
-        <nav class="nav">
-            <a href="BorrowerDashboard.html">
-                <button> Dashboard </button>
-            </a>
-    
-            <a href="BorrowerReservation.html">
-                <button style="background-color: #4a90e2; color: white; font-weight: bold; border-radius: 0px 15px 15px 0px;"> Reservation Request </button>
-            </a>
-            
-            <a href="BorrowerHistory.html">
-                <button> Reservation History </button>
-            </a>
-            
-            <a href="BorrowerFurnishing.html">
-                <button> Furnishing Management </button>
-            </a>
-    
-            <a href="BorrowerNotif.html">
-                <button> Notifications & Alerts </button>
-            </a>
-    
-            <a href="#">
-                <button> QR Code Scanning & Quick Access </button>
-            </a>
-    
-            <a href="BorrowerReport.html">
-              <button>Report Furnishing Status</button>
-            </a>
-  
-            <a href="BorrowerLogin.html">
-                <button>Log out</button>
-            </a>
-        </nav>
-    </aside>
 
-    <div class="main">
-      <div class="form-box">
-        <div class="box">
+        <nav class="nav">
+          <a href="BorrowerDashboard.html">
+            <button>Dashboard</button>
+          </a>
+          <a href="BorrowerReservation.html">
+            <button
+              style="
+                background-color: #4a90e2;
+                color: white;
+                font-weight: bold;
+                border-radius: 0px 15px 15px 0px;
+              "
+            >
+              Reservation Request
+            </button>
+          </a>
+          <a href="BorrowerHistory.html">
+            <button>Reservation History</button>
+          </a>
+          <a href="BorrowerFurnishing.html">
+            <button>Furnishing Management</button>
+          </a>
+          <a href="BorrowerNotif.html">
+            <button>Notifications & Alerts</button>
+          </a>
+          <a href="#">
+            <button>QR Code Scanning & Quick Access</button>
+          </a>
+          <a href="BorrowerReport.html">
+            <button>Report Furnishing Status</button>
+          </a>
+          <a href="BorrowerLogin.html">
+            <button>Log out</button>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <div class="form-box">
+          <div class="box">
             <div class="borr-text">
-          <h1>BORROWER'S SLIP</h1>
-        </div>
-    </div>
+              <h1>BORROWER'S SLIP</h1>
+            </div>
+          </div>
+
           <div class="borr-details">
             <p>*Borrower's Details</p>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TestQR101" alt="QR CODE" class="qrcode">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TestQR101"
+              alt="QR CODE"
+              class="qrcode"
+            />
           </div>
 
           <form>
-            <!-- Left Side (form-details-1) -->
+            <!-- Left Side -->
             <div class="form-left">
               <div class="form-details-1">
-                <label for="name">Name</label><br>
-                <input type="text" name="name">
+                <label for="name">Name</label><br />
+                <input type="text" name="name" />
               </div>
-        
+
               <div class="form-details-1">
-                <label for="contact-number">Contact Number</label><br>
-                <input type="tel" name="contact-number">
+                <label for="contact-number">Contact Number</label><br />
+                <input type="tel" name="contact-number" />
               </div>
-        
-            
-                <p class="qty">Quantity</p>
-                <select class="opt">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-              
-        
+
+              <p class="qty">Quantity</p>
+              <select class="opt">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+
               <div class="form-details-3">
-                <label for="purpose-of-use">Purpose of Use</label><br>
-                <input type="text" name="purpose-of-use">
+                <label for="purpose-of-use">Purpose of Use</label><br />
+                <input type="text" name="purpose-of-use" />
               </div>
             </div>
-        
-            <!-- Right Side (form-details-2) -->
+
+            <!-- Right Side -->
             <div class="form-right">
               <div class="form-details-2">
-                <label for="date-borrowed">Date Borrowed</label><br>
-                <input type="date" name="date-borrowed">
+                <label for="date-borrowed">Date Borrowed</label><br />
+                <input type="date" name="date-borrowed" />
               </div>
-        
+
               <div class="form-details-2">
-                <label for="date-of-return">Date of Return</label><br>
-                <input type="date" name="date-of-return">
+                <label for="date-of-return">Date of Return</label><br />
+                <input type="date" name="date-of-return" />
               </div>
-        
+
               <div class="form-details-2">
-                <label for="transferred-to">Transferred to (Campus)</label><br>
-                <input type="text" name="transferred-to-campus">
+                <label for="transferred-to-campus"
+                  >Transferred to (Campus)</label
+                ><br />
+                <input type="text" name="transferred-to-campus" />
               </div>
             </div>
+
+            <!-- Form Buttons -->
+            <div class="form-btn">
+              <button type="submit" class="sub-req">Submit Request</button>
+              <button type="reset" class="cancel-btn">Cancel</button>
+            </div>
           </form>
-          <div class="form-btn">
-            <button class="sub-req">Submit Request</button>
-            <button class="cancel-btn">Cancel</button>
-          </div>
-      </div>
-      </div>
-    </main>
-  </div>
-</body>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

@@ -1,137 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
-    <link rel="stylesheet" href="borrowerStyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Times New Roman"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="borrowerStyles.css" />
     <title>Borrower Dashboard - BTECH FURNISHING</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-      <header>  
+      <header>
         <p class="first-line">BTECH</p>
-        <input type="text" placeholder="Search..." class="header-search"/>
+        <input type="text" placeholder="Search..." class="header-search" />
         <p class="second-line">FURNISHING</p>
       </header>
     </div>
-    
+
     <div class="container">
       <aside class="sidebar">
         <div class="profile">
-          <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="User"/>
-          <h2> Borrower </h2>
+          <img
+            src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg"
+            alt="User"
+          />
+          <h2>Borrower</h2>
         </div>
-  
+
         <nav class="nav">
-          <nav class="nav">
-            <a href="BorrowerDashboard.html">
-                <button style="background-color: #4a90e2; color: white; font-weight: bold; border-radius: 0px 15px 15px 0px;"> Dashboard </button>
-            </a>
-    
-            <a href="BorrowerReservation.html">
-                <button> Reservation Request </button>
-            </a>
-            
-            <a href="BorrowerHistory.html">
-                <button> Reservation History </button>
-            </a>
-            
-            <a href="BorrowerFurnishing.html">
-                <button> Furnishing Management </button>
-            </a>
-    
-            <a href="BorrowerNotif.html">
-                <button> Notifications & Alerts </button>
-            </a>
-    
-            <a href="#">
-                <button> QR Code Scanning & Quick Access </button>
-            </a>
-    
-            <a href="BorrowerReport.html">
-              <button>Report Furnishing Status</button>
-            </a>
-  
-            <a href="BorrowerLogin.html">
-                <button>Log out</button>
-            </a>
+          <a href="BorrowerDashboard.html">
+            <button
+              style="
+                background-color: #4a90e2;
+                color: white;
+                font-weight: bold;
+                border-radius: 0px 15px 15px 0px;
+              "
+            >
+              Dashboard
+            </button>
+          </a>
+          <a href="BorrowerReservation.html">
+            <button>Reservation Request</button>
+          </a>
+          <a href="BorrowerHistory.html">
+            <button>Reservation History</button>
+          </a>
+          <a href="BorrowerFurnishing.html">
+            <button>Furnishing Management</button>
+          </a>
+          <a href="BorrowerNotif.html">
+            <button>Notifications & Alerts</button>
+          </a>
+          <a href="#">
+            <button>QR Code Scanning & Quick Access</button>
+          </a>
+          <a href="BorrowerReport.html">
+            <button>Report Furnishing Status</button>
+          </a>
+          <a href="BorrowerLogin.html">
+            <button>Log out</button>
+          </a>
         </nav>
-      </nav>
-  </aside>
-      
+      </aside>
+
       <main class="main">
         <section class="overview">
           <h1>Dashboard Overview</h1>
           <div class="cards">
-  
-          <div class="card">
+            <div class="card">
               <div class="card-icon">
-                  <i class="fas fa-table"></i>
-                  <p>Total Furnishing</p>
-                  <span>20</span>
+                <i class="fas fa-table"></i>
+                <p>Total Furnishing</p>
+                <span>20</span>
               </div>
-          </div>
-  
-          <div class="card">
+            </div>
+
+            <div class="card">
               <div class="card-icon">
-                  <i class="fas fa-check"></i>
-                  <p>Available</p>
-                  <span>13</span>
+                <i class="fas fa-check"></i>
+                <p>Available</p>
+                <span>13</span>
               </div>
-          </div>
-  
-          <div class="card">
+            </div>
+
+            <div class="card">
               <div class="card-icon">
-                  <i class="fas fa-calendar-check"></i>
-                  <p>Reservation</p>
-                  <span>7</span>
+                <i class="fas fa-calendar-check"></i>
+                <p>Reservation</p>
+                <span>7</span>
               </div>
-          </div>
-  
+            </div>
           </div>
         </section>
-      
-      <!-- Recent Activity Logs -->
-      <div class="activity-logs">
-        <h2>Recent Activity Logs</h2>
-        
-        <table>
-          <thead>
-            <tr>
-              <th>Item Details</th>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Time</th>
-              <th>Status Update</th>
-            </tr>
-          </thead>
-          <tbody id="activity-table-body">
-            <!-- Sample data - this would be populated by JavaScript in a real app -->
-            <tr>
-              <td>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=ITEM001" alt="QR Code" class="qr-code">
-              </td>
-              <td>MJ Castillo</td>
-              <td>03/17/25</td>
-              <td>11:29 am</td>
-              <td><span class="status">Pending</span></td>
-            </tr>
-            <tr>
-              <td>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=ITEM002" alt="QR Code" class="qr-code">
-              </td>
-              <td>MJ Castillo</td>
-              <td>03/17/25</td>
-              <td>11:29 am</td>
-              <td><span class="status">Overdue</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+
+        <!-- Recent Activity Logs -->
+        <div class="activity-logs">
+          <h2>Recent Activity Logs</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Item Details</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status Update</th>
+              </tr>
+            </thead>
+            <tbody id="activity-table-body">
+              <tr>
+                <td>
+                  <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=ITEM001"
+                    alt="QR Code"
+                    class="qr-code"
+                  />
+                </td>
+                <td>MJ Castillo</td>
+                <td>03/17/25</td>
+                <td>11:29 am</td>
+                <td><span class="status">Pending</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=ITEM002"
+                    alt="QR Code"
+                    class="qr-code"
+                  />
+                </td>
+                <td>MJ Castillo</td>
+                <td>03/17/25</td>
+                <td>11:29 am</td>
+                <td><span class="status">Overdue</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
-  </div>
-</body>
+  </body>
 </html>

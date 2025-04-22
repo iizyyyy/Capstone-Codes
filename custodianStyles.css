@@ -76,9 +76,9 @@ header {
 
 .header-content {
   display: flex;
-  justify-content: column; 
-  align-items: center; 
-  gap: 10px; 
+  justify-content: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-search {
@@ -86,28 +86,28 @@ header {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  margin: -1% 67%;; 
+  margin: -1% 67%;
   display: block;
 }
 
 .first-line {
-  color: #4580C5;
+  color: #4580c5;
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0;
   margin-left: 60px;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
-    
+
 .second-line {
-  color: #4580C5;
+  color: #4580c5;
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0;
   margin-left: 20px;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
 
 .overview h1 {
@@ -126,7 +126,7 @@ header {
   border-radius: 10px;
   flex: 1;
   text-align: center;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .card span {
@@ -185,11 +185,12 @@ header {
 }
 
 /*Admin Reservation*/
-.form-section, .table {
+.form-section,
+.table {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
@@ -203,7 +204,8 @@ header {
   gap: 15px;
 }
 
-.form-grid input, .form-grid select {
+.form-grid input,
+.form-grid select {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -215,7 +217,8 @@ table {
   text-align: center;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
@@ -229,7 +232,7 @@ th, td {
 }
 
 .approve {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -325,7 +328,8 @@ th, td {
     padding: 15px;
   }
 
-  .qr-item, .alert-item {
+  .qr-item,
+  .alert-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -361,7 +365,8 @@ img.item-img {
   object-fit: contain;
 }
 
-select, input[type="number"] {
+select,
+input[type="number"] {
   padding: 5px;
   border-radius: 5px;
 }
@@ -392,7 +397,7 @@ select, input[type="number"] {
 
 .add-btn-1 {
   display: flex;
-  justify-content: right; 
+  justify-content: right;
 }
 
 .add-btn:hover {
@@ -404,12 +409,12 @@ select, input[type="number"] {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
 .report-section h2 {
-  color: #4580C5;
+  color: #4580c5;
   margin-bottom: 20px;
   font-size: 22px;
 }
@@ -424,15 +429,16 @@ select, input[type="number"] {
 .filter-btn {
   padding: 8px 16px;
   background: white;
-  border: 1px solid #4580C5;
-  color: #4580C5;
+  border: 1px solid #4580c5;
+  color: #4580c5;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s;
 }
 
-.filter-btn:hover, .filter-btn.active {
-  background: #4580C5;
+.filter-btn:hover,
+.filter-btn.active {
+  background: #4580c5;
   color: white;
 }
 
@@ -448,12 +454,12 @@ select, input[type="number"] {
   border-radius: 8px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .category-card i {
   font-size: 32px;
-  color: #4580C5;
+  color: #4580c5;
   margin-bottom: 10px;
 }
 
@@ -465,7 +471,7 @@ select, input[type="number"] {
 .category-card .count {
   font-size: 24px;
   font-weight: bold;
-  color: #4580C5;
+  color: #4580c5;
 }
 
 .chart-container {
@@ -517,7 +523,7 @@ select, input[type="number"] {
   border-collapse: collapse;
 }
 
-.maintenance-history th, 
+.maintenance-history th,
 .maintenance-history td {
   padding: 12px;
   text-align: left;
@@ -531,7 +537,7 @@ select, input[type="number"] {
 
 .export-btn {
   padding: 8px 16px;
-  background: #4580C5;
+  background: #4580c5;
   color: white;
   border: none;
   border-radius: 5px;
@@ -578,15 +584,15 @@ select, input[type="number"] {
 
 @media (max-width: 768px) {
   .report-grid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-  
+
   .chart-container {
-      height: 250px;
+    height: 250px;
   }
-  
+
   .date-filter {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

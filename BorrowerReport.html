@@ -1,115 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Item Issue - BTECH FURNISHING</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Times New Roman"
+      rel="stylesheet"
+    />
+    <title>Borrower Report Furniture Status - BTECH FURNISHING</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
 
-  <style>
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(159deg, rgba(8,146,208,1) 0%, rgba(75,0,130,1) 100%);
-}
+      .container {
+        display: flex;
+        height: 100vh;
+      }
 
-.report-form {
-    background-color: white;
-    padding: 40px;
-    border-radius: 12px;
-    max-width: 500px;
-    width: 100%;
-    height: 500px;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+      .sidebar {
+        height: 110%;
+        width: 250px;
+        background: #d6d6d6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+      }
 
-.report-form h2 {
-    text-align: center;
-    color: #333;
-}
+      .profile img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+      }
 
-hr {
-    margin-top: -10px;
-}
+      .profile h2 {
+        margin-top: 10px;
+        margin-left: -17px;
+      }
 
-.report-form label {
-    display: block;
-    margin-top: 15px;
-    color: #555;
-}
+      .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
 
-.report-form input,
-.report-form select,
-.report-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
 
-.report-form input[type="submit"] {
-    margin-top: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+      .nav button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: none;
+        text-align: left;
+        padding-left: 20px;
+        cursor: pointer;
+        font-size: 16px;
+      }
 
-.report-form input[type="submit"]:hover {
-    background-color: #0056b3;
-}
+      .nav button:hover {
+        background-color: #4a90e2;
+        color: white;
+        font-weight: bold;
+        border-radius: 0px 15px 15px 0px;
+      }
 
-.back-link {
-    display: block;
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
-    text-decoration: none;
-}
+      nav .active {
+        background-color: #4a90e2;
+      }
 
-.back-link:hover {
-    color: #444;
-}
+      .main {
+        flex: 1;
+        background: #eaeaea;
+        padding: 20px;
+        height: 108%;
+      }
 
-</style>
+      header {
+        background-color: white;
+        padding: 25px;
+      }
 
-    <body>
+      .header-content {
+        display: flex;
+        justify-content: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .header-search {
+        background-color: white;
+        width: 30%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin: -1% 67%;
+        display: block;
+      }
+
+      .first-line {
+        color: #4580c5;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: 0;
+        margin-left: 60px;
+        font-family: "Times New Roman";
+      }
+
+      .second-line {
+        color: #4580c5;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: 0;
+        margin-left: 20px;
+        font-family: "Times New Roman";
+      }
+
+      .report-form {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .report-form h2 {
+        text-align: center;
+        color: #2a5db0;
+        font-size: 2rem;
+      }
+
+      .report-form label {
+        display: block;
+        margin-top: 15px;
+        color: #555;
+      }
+
+      .report-form input,
+      .report-form select,
+      .report-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      .report-form input[type="submit"] {
+        margin-top: 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .report-form input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <p class="first-line">BTECH</p>
+        <input type="text" placeholder="Search..." class="header-search" />
+        <p class="second-line">FURNISHING</p>
+      </header>
+    </div>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img
+            src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg"
+            alt="User"
+          />
+          <h2>Borrower</h2>
+        </div>
+
+        <nav class="nav">
+          <a href="BorrowerDashboard.html">
+            <button>Dashboard</button>
+          </a>
+
+          <a href="BorrowerReservation.html">
+            <button>Reservation Request</button>
+          </a>
+
+          <a href="BorrowerFurnishing.html">
+            <button>Furnishing Management</button>
+          </a>
+
+          <a href="BorrowerNotif.html">
+            <button>Notifications & Alerts</button>
+          </a>
+
+          <a href="BorrowerHistory.html">
+            <button>Reservation History</button>
+          </a>
+
+          <a href="#">
+            <button>QR Code Scanning & Quick Access</button>
+          </a>
+
+          <a href="BorrowerReport.html">
+            <button
+              style="
+                background-color: #4a90e2;
+                color: white;
+                font-weight: bold;
+                border-radius: 0px 15px 15px 0px;
+              "
+            >
+              Report
+            </button>
+          </a>
+
+          <a href="BorrowerLogin.html">
+            <button>Log out</button>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="main">
         <div class="report-form">
-            <h2>Report Damaged or Missing Item</h2>
-            <hr style="padding: 1px; background-color: black;">
-            <form>
-            <label for="item_id">Item ID:</label>
-            <input type="text" id="item_id" name="item_id" placeholder="e.g. 123456" required>
+          <h2>Report Damaged or Missing Item</h2>
+          <hr style="padding: 1px; background-color: black" />
+          <form>
+            <label for="item_id">Furniture:</label>
+            <input
+              type="text"
+              id="item_id"
+              name="item_id"
+              placeholder="e.g. Table, Chair, Flag, Podium"
+              required
+            />
+
+            <label for="location">Campus:</label>
+            <select name="location" id="location" required>
+              <option value="1">Main Campus</option>
+              <option value="2">Tibag Campus</option>
+            </select>
 
             <label for="location">Location:</label>
             <select name="location" id="location" required>
-                <option value="location">--Select--</option>
-                <option value="#">1</option>
-                <option value="#">2</option>  
-                <option value="#">3</option> 
+              <option value="">Select</option>
+              <option value="damaged">Computer Lab 1</option>
+              <option value="damaged">Computer Lab 2</option>
+              <option value="damaged">Computer Lab 3</option>
+              <option value="damaged">Dean's Office</option>
+              <option value="damaged">Faculty Room</option>
             </select>
 
             <label for="issue_type">Issue Type:</label>
             <select id="issue_type" name="issue_type" required>
-                <option value="">--Select--</option>
-                <option value="damaged">Damaged Item</option>
-                <option value="missing">Missing Item</option>
+              <option value="damaged">Damaged Item</option>
+              <option value="missing">Missing Item</option>
             </select>
 
             <label for="description">Issue Details:</label>
-            <textarea id="description" name="description" rows="4" placeholder="Describe the issue..."></textarea>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Describe the issue..."
+            ></textarea>
 
-            <input type="submit" value="Submit Report">
-            <a href="UserLogin.html" class="back-link">Back to Login</a>
-            </form>
+            <input type="submit" value="Submit Report" />
+          </form>
         </div>
-    </body>
+      </main>
+    </div>
+  </body>
 </html>
