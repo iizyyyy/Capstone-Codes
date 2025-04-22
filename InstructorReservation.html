@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
-    <link rel="stylesheet" href="custodianStyles.css">
-    <title>Custodian Reservation Management - BTECH FURNISHING</title>
+    <link rel="stylesheet" href="instructorStyles.css">
+    <title>BTech Furnishing Reservation Management</title>
 </head>
 
 <body>
@@ -16,45 +17,40 @@
       <p class="second-line">FURNISHING</p>
     </header>
   </div>
-
+  
   <div class="container">
     <aside class="sidebar">
       <div class="profile">
-        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Admin">
-        <h2> Custodian </h2>
+        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Instructor" />
+        <h2>Instructor</h2>
       </div>
 
       <nav class="nav">
-        <a href="CustodianDashboard.html">
-            <button> Dashboard </button>
+        <a href="InstructorDashboard.html">
+          <button>Dashboard</button>
         </a>
 
-        <a href="CustodianFurnishing.html">
-            <button> Furnishing Management </button>
+        <a href="InstructorReservation.html">
+          <button style="background-color: #4a90e2; color: white; font-weight: bold; border-radius: 0px 15px 15px 0px;">Reservation Request</button>
         </a>
         
-        <a href="CustodianReservation.html">
-            <button style="background-color: #4a90e2; color: white; font-weight: bold; border-radius: 0px 15px 15px 0px;"> Reservation Management </button>
+        <a href="InstructorFurnishing.html">
+          <button>Furnishing Management</button>
         </a>
 
-        <a href="CustodianInv.html">
-            <button> Inventory Monitoring </button>
+        <a href="InstructorNotif.html">
+          <button>Notifications & Alerts</button>
         </a>
+        
+        <a href="InstructorQRScan.html">
+          <button> QR Code Scanning & Quick Access </button>
+      </a>
 
-        <a href="CustodianNotif.html">
-            <button> Notifications & Alerts </button>
-        </a>
-
-        <a href="CustodianReports.html">
-          <button> Reports & Data Analysis </button>
-        </a>
-
-        <a href="CustodianLogin.html">
+      <a href="InstructorLogin.html">
           <button>Log out</button>
-        </a>
-
-    </nav>
-</aside>
+      </a>
+      </nav>
+    </aside>
 
     <main class="main">
       <div class="form-section">
@@ -74,7 +70,8 @@
         </div>
       </div>
 
-      <div class="table">
+      <section class="table">
+        <h3>Reservation Requests</h3>
         <table>
           <thead>
             <tr>
@@ -82,47 +79,56 @@
               <th>Item</th>
               <th>Request By</th>
               <th>Date</th>
-              <th>Status</th>
+              <th>Quality</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Chair101" class="qr-img" /></td>
+              <td>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=chair123" alt="QR Code" class="qr-img">
+              </td>
               <td>Chair</td>
               <td>MJ Castillo</td>
               <td>March 24, 2025</td>
-              <td>Pending</td>
+              <td>1</td>
               <td>
                 <button class="action-btn approve">Approve</button>
                 <button class="action-btn reject">Reject</button>
+                <button class="action-btn view">View</button>
               </td>
             </tr>
             <tr>
-              <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Table102" class="qr-img" /></td>
+              <td>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=table456" alt="QR Code" class="qr-img">
+              </td>
               <td>Table</td>
               <td>Bryan</td>
               <td>March 20, 2025</td>
-              <td>Pending</td>
+              <td>1</td>
               <td>
                 <button class="action-btn approve">Approve</button>
                 <button class="action-btn reject">Reject</button>
+                <button class="action-btn view">View</button>
               </td>
             </tr>
             <tr>
-              <td><img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=Projector103" class="qr-img" /></td>
+              <td>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=projector789" alt="QR Code" class="qr-img">
+              </td>
               <td>Projector</td>
               <td>Micaella</td>
               <td>March 22, 2025</td>
-              <td>Pending</td>
+              <td>1</td>
               <td>
                 <button class="action-btn approve">Approve</button>
                 <button class="action-btn reject">Reject</button>
+                <button class="action-btn view">View</button>
               </td>
             </tr>
           </tbody>
         </table>
-      </div>
+      </section>
     </main>
   </div>
 </body>

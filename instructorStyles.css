@@ -84,15 +84,13 @@ header {
 }
 
 .header-search {
-  background: white;
-  width: 40%;
-  padding: 14px;
-  border-radius: 18px;
+  background-color: white;
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  margin: -1% 58%;; 
+  margin: -1% 67%;; 
   display: block;
-  font-weight: bolder;
-  font-size: 1.1em;
 }
 
 .first-line {
@@ -212,6 +210,7 @@ header {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  background-color: white;
 }
 
 table {
@@ -593,22 +592,6 @@ overflow-x: auto;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-}
-
-.borr-text {
-  text-align: center;
-  color: blue;
-  padding: 10px;
-  margin-top: -40px;
-}
-
-.borr-details {
-  font-weight: bold;
-  color: gray;
-  margin-top: -60px;
-  padding: 10px;
-  font-size: 20px;
-  align-content: baseline;
 }
 
 .qrcode {

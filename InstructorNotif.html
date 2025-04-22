@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+    <link rel="stylesheet" href="instructorStyles.css">
+    <title>Notifications & Alerts</title>
+</head>
+
+<body>
+  <div class="header">
+    <header>  
+      <p class="first-line">BTECH</p>
+      <input type="text" placeholder="Search..." class="header-search"/>
+      <p class="second-line">FURNISHING</p>
+    </header>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="https://raw.githubusercontent.com/iizyyyy/Capstone-Codes/main/images/btechlogo.jpg" alt="Instructor">
+        <h2>Instructor</h2>
+      </div>
+
+      <nav class="nav">
+        <a href="InstructorDashboard.html">
+            <button> Dashboard </button>
+        </a>
+        
+        <a href="InstructorReservation.html">
+            <button> Reservation Request </button>
+        </a>
+
+        <a href="InstructorFurnishing.html">
+            <button> Furnishing Management </button>
+        </a>
+
+        <a href="InstructorNotif.html">
+            <button style="background-color: #4a90e2; color: white; font-weight: bold; border-radius: 0px 15px 15px 0px;"> Notifications & Alerts </button>
+        </a>
+
+        <a href="InstructorQRScan.html">
+            <button> QR Code Scanning & Quick Access </button>
+        </a>
+  
+        <a href="InstructorLogin.html">
+            <button>Log out</button>
+        </a>
+
+    </nav>
+</aside>
+
+    <main class="main">
+      <div class="section">
+        <h3>Furnishing QR Codes</h3>
+        <div class="qr-item">
+          <div class="qr-left">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Chair" class="qr-img">
+            <div>
+              <div class="text">Chair - Room 101</div>
+              <div class="text">Status: Available</div>
+            </div>
+          </div>
+          <button class="btn-remove">Remove</button>
+        </div>
+
+        <div class="qr-item">
+          <div class="qr-left">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Table" class="qr-img">
+            <div>
+              <div class="text">Table - Room 101</div>
+              <div class="text">Status: In Use</div>
+            </div>
+          </div>
+          <button class="btn-remove">Remove</button>
+        </div>
+
+        <div class="qr-item">
+          <div class="qr-left">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Projector" class="qr-img">
+            <div>
+              <div class="text">Projector - Room 103</div>
+              <div class="text">Status: Missing</div>
+            </div>
+          </div>
+          <button class="btn-remove">Remove</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Real-Time Alerts</h3>
+        <div class="alert-item">
+          <div class="alert-left">
+            <div class="text">Chair in Room 101 is damaged</div>
+            <div class="alert-type damage">Damage Alert</div>
+          </div>
+          <button class="btn-dismiss">Dismiss</button>
+        </div>
+
+        <div class="alert-item">
+          <div class="alert-left">
+            <div class="text">Table in Room 101 required maintenance</div>
+            <div class="alert-type maintenance">Maintenance Alert</div>
+          </div>
+          <button class="btn-dismiss">Dismiss</button>
+        </div>
+
+        <div class="alert-item">
+          <div class="alert-left">
+            <div class="text">Projector from Room 103 is missing</div>
+            <div class="alert-type missing">Missing Item Alert</div>
+          </div>
+          <button class="btn-dismiss">Dismiss</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
